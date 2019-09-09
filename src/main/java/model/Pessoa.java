@@ -27,4 +27,12 @@ public class Pessoa {
     public void setRg(String rg) {
         this.rg = rg;
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", rg='" + rg + '\'' +
+                '}';
+    }
 }

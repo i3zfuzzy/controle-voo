@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Aviao {
@@ -10,7 +11,7 @@ public class Aviao {
 
     private boolean isVoando;
 
-    private List<Pessoa> passageiros;
+    private List<Pessoa> passageiros = new ArrayList<>();
 
     public Aviao() {
     }
@@ -52,5 +53,15 @@ public class Aviao {
 
     public void setPassageiros(List<Pessoa> passageiros) {
         this.passageiros = passageiros;
+    }
+
+    @Override
+    public String toString() {
+        return "Aviao{" +
+                "isMotor=" + isMotor +
+                ", velocidade=" + velocidade +
+                ", isVoando=" + isVoando +
+                ", passageiros=" + passageiros +
+                '}';
     }
 }
